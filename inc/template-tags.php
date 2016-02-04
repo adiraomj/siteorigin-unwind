@@ -254,6 +254,7 @@ function siteorigin_unwind_footer_text(){
 	);
 	echo wp_kses_post( $text );
 }
+endif;
 
 if( !function_exists('siteorigin_unwind_comment') ) :
 function siteorigin_unwind_comment( $comment, $args, $depth ){
