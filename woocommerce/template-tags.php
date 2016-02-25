@@ -32,5 +32,12 @@ function siteorigin_unwind_loop_product_title() {
 	echo '<a href="' . get_the_permalink() . '"><h3>' . get_the_title() . '</h3></a>';
 }
 
-// Insert
+// Insert add to cart button.
 add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_add_to_cart', 10 );
+
+// Insert Quick View button ( supported by the YITH WooCommerce Quick View plugin  ).
+if( class_exists( 'YITH_WCQV_Frontend' ) ){
+	$quick_view = YITH_WCQV_Frontend();
+	remove_action('woocommerce_after_shop_loop_item', array( $quick_view, 'yith_add_quick_view_button' ), 15 );
+	add_action( 'woocommerce_before_shop_loop_item_title', array( $quick_view, 'yith_add_quick_view_button' ), 10 );
+}

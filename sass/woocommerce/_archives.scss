@@ -49,12 +49,37 @@
 					}
 				}
 
+				.yith-wcqv-button {
+					position: absolute;
+					top: 25%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					margin: 0;
+					display: none;
+					@include transition(all 0.2s linear);
+					text-transform: uppercase;
+					border-radius: 0;
+					border: 2px solid #fff;
+					background: transparent;
+					color: #fff;
+					font-size: 0.8em;
+
+					&:hover {
+						color: $color__text-dark;
+						background: #fff;
+					}
+				}
+
 				&:hover {
 					img {
 						opacity: 0.5;
 					}
 
 					.add_to_cart_button {
+						display: block;
+					}
+
+					.yith-wcqv-button {
 						display: block;
 					}
 				}
