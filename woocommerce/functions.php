@@ -60,3 +60,8 @@ if( !function_exists('siteorigin_unwind_woocommerce_output_upsells') ) {
 	}
 
 }
+
+/**
+ * Load template related functions.
+ */
+include get_template_directory() . '/woocommerce/template-tags.php';
