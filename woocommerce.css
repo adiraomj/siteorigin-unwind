@@ -28,6 +28,75 @@
       background-color: #00a76a; }
 
 /*--------------------------------------------------------------
+# WooCommerce Archive
+--------------------------------------------------------------*/
+.woocommerce span.onsale {
+  border-radius: 0;
+  text-transform: uppercase;
+  min-height: 0;
+  line-height: normal;
+  background-color: #24c48a; }
+
+.woocommerce ul.products li.product .product-loop-image {
+  background: #00a76a;
+  position: relative; }
+  .woocommerce ul.products li.product .product-loop-image img {
+    margin-bottom: 0;
+    vertical-align: middle;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .woocommerce ul.products li.product .product-loop-image .onsale {
+    left: 0;
+    right: auto;
+    margin: 0;
+    z-index: 10; }
+  .woocommerce ul.products li.product .product-loop-image .add_to_cart_button {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    display: none;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 2px solid #fff;
+    background: #fff;
+    color: #2d2d2d;
+    font-size: 0.8em; }
+    .woocommerce ul.products li.product .product-loop-image .add_to_cart_button:hover {
+      border-color: #2d2d2d; }
+  .woocommerce ul.products li.product .product-loop-image:hover img {
+    opacity: 0.5; }
+  .woocommerce ul.products li.product .product-loop-image:hover .add_to_cart_button {
+    display: block; }
+
+.woocommerce ul.products li.product h3 {
+  text-align: center;
+  color: #2d2d2d; }
+  .woocommerce ul.products li.product h3:hover {
+    color: #00a76a; }
+
+.woocommerce ul.products li.product .star-rating {
+  margin: 0 auto 0.5em auto; }
+
+.woocommerce ul.products li.product .price {
+  text-align: center; }
+  .woocommerce ul.products li.product .price del {
+    color: #626262; }
+    .woocommerce ul.products li.product .price del .amount {
+      color: #626262; }
+  .woocommerce ul.products li.product .price del, .woocommerce ul.products li.product .price ins {
+    display: inline-block; }
+  .woocommerce ul.products li.product .price .amount {
+    color: #24c48a; }
+
+/*--------------------------------------------------------------
 # WooCommerce Checkout
 --------------------------------------------------------------*/
 .woocommerce .woocommerce-info {
