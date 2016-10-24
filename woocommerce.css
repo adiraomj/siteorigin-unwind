@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+# WooCommerce Single Product
+--------------------------------------------------------------*/
+.woocommerce.single-product #content div.product .entry-summary {
+  margin-top: 0; }
+  .woocommerce.single-product #content div.product .entry-summary .product_title {
+    text-align: left;
+    font-size: 1.3em; }
+  .woocommerce.single-product #content div.product .entry-summary .price {
+    font-size: 1.3em;
+    margin-bottom: 1em; }
+    .woocommerce.single-product #content div.product .entry-summary .price del,
+    .woocommerce.single-product #content div.product .entry-summary .price del .amount {
+      color: #dadada; }
+    .woocommerce.single-product #content div.product .entry-summary .price .amount,
+    .woocommerce.single-product #content div.product .entry-summary .price ins {
+      color: #25c48a; }
+  .woocommerce.single-product #content div.product .entry-summary p {
+    color: #626262;
+    font-size: 0.85em;
+    line-height: 1.75em; }
+  .woocommerce.single-product #content div.product .entry-summary .cart button {
+    text-transform: uppercase;
+    font-size: 0.85em;
+    background-color: #25c48a;
+    border-radius: 0; }
+    .woocommerce.single-product #content div.product .entry-summary .cart button:hover {
+      background-color: #21af7b; }
